@@ -46,10 +46,10 @@ RUN set -ex \
 
 RUN set -ex \
         && pip3 install --upgrade pip \
-        && pip3 install git+https://github.com/ehForwarderBot/ehForwarderBot.git \
-        && pip3 install git+https://github.com/ehForwarderBot/efb-telegram-master.git \
+        && pip3 install ehforwarderbot \
+        && pip3 install efb-telegram-master \
         && pip3 install git+https://github.com/ehForwarderBot/efb-wechat-slave.git \
-        && pip3 install git+https://github.com/ehForwarderBot/efb-link_preview-middleware.git \
+        && pip3 install efb-link-preview-middleware \
         && pip3 install lottie \
         && pip3 install cairosvg \
         && sed -i 's/channel_emoji = "💬"/channel_emoji = "𝙒𝙚𝙘𝙝𝙖𝙩"/g' /usr/lib/python3.11/site-packages/efb_wechat_slave/__init__.py \
