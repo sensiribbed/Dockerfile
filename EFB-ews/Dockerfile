@@ -17,12 +17,12 @@ RUN set -ex \
         freetype \
         lcms2 \
         openjpeg \
+        python3=3.10 \
         py3-olefile \
         openblas \
         py3-numpy \
         py3-pillow \
         py3-requests \
-        python3-dev \
         py3-pip \
         py3-cryptography \
         py3-decorator \
@@ -52,8 +52,8 @@ RUN set -ex \
         && pip3 install efb-link-preview-middleware \
         && pip3 install lottie \
         && pip3 install cairosvg \
-        && sed -i 's/channel_emoji = "💬"/channel_emoji = "𝙒𝙚𝙘𝙝𝙖𝙩"/g' /usr/lib/python3.11/site-packages/efb_wechat_slave/__init__.py \
-        && sed -i "s/{self.chat_type_emoji}/丨/g" /usr/lib/python3.11/site-packages/efb_telegram_master/chat.py
+        && sed -i 's/channel_emoji = "💬"/channel_emoji = "𝙒𝙚𝙘𝙝𝙖𝙩"/g' /usr/lib/python3.10/site-packages/efb_wechat_slave/__init__.py \
+        && sed -i "s/{self.chat_type_emoji}/丨/g" /usr/lib/python3.10/site-packages/efb_telegram_master/chat.py
         
         
 
