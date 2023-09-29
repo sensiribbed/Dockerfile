@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.17
 MAINTAINER None
 
 ENV LANG C.UTF-8
@@ -17,7 +17,7 @@ RUN set -ex \
         freetype \
         lcms2 \
         openjpeg \
-        python3=3.10 \
+        python3-dev \
         py3-olefile \
         openblas \
         py3-numpy \
