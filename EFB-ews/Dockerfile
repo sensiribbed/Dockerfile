@@ -48,7 +48,7 @@ RUN set -ex \
         && pip3 install --upgrade pip \
         && pip3 install ehforwarderbot \
         && pip3 install efb-telegram-master \
-        && pip3 install git+https://github.com/ehForwarderBot/efb-wechat-slave.git \
+        && pip3 install git+https://github.com/sensiribbed/efb-wechat-slave.git \
         && pip3 install efb-link-preview-middleware \
         && pip3 install lottie \
         && pip3 install cairosvg \
